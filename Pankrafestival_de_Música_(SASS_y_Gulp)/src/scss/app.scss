@@ -1,0 +1,11 @@
+//usar npx gulp --- o npm run ---
+
+//ANTERIOR: 
+//@import 'base/variables';
+//@import 'contenido/contenido';
+//NUEVA:
+//@use 'base';
+//@import 'contenido/contenido'
+
+@use 'base';
+@use 'layout';
