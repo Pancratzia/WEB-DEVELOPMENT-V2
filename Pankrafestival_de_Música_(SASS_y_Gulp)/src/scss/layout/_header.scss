@@ -5,13 +5,26 @@
 .header {
     background-color: v.$verde;
 
+    @include m.tablet {
+        &.fijo {
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 100%;
+            box-shadow: .1rem .2rem .3rem #333;
+        }
+    }
+
+
+
     h1 {
         color: v.$blanco;
         text-align: center;
-        @include m.tablet{
+
+        @include m.tablet {
             margin: 0;
         }
-        
+
     }
 
     .contenido-header {
@@ -25,7 +38,7 @@
 }
 
 .navegacion-principal {
-    @include m.tablet{
+    @include m.tablet {
         display: flex;
         gap: 2rem;
     }
@@ -37,14 +50,14 @@
         text-align: center;
         padding-bottom: 1rem;
 
-        
 
-        @include m.tablet{
+
+        @include m.tablet {
             margin: 0;
             padding: 0;
         }
 
-        
+
         &:hover {
             color: v.$amarillo;
         }
